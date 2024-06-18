@@ -102,9 +102,6 @@ console.log(userProfile);
 //Imported and Exported files
 
 
-
-
-
 //---------EXERCISE 8---------//
 
 // Create a function that takes two parameters, `noun` and `adjective`, both with the following respective default values:
@@ -124,3 +121,46 @@ function describeAnimal(noun = "cat", adjective = "white") {
 // Examples
 describeAnimal();
 describeAnimal("turtle", "green");
+
+
+//---------EXERCISE 9---------//
+
+// Convert the following `if...else` statement in to a ternary:
+
+let pizza = 'tasty';
+
+if (pizza === 'tasty') {
+  console.log('yum');
+} else {
+  console.log('yuck');
+}
+
+// Your code here
+console.log(pizza === 'tasty' ? 'yum' : 'yuck');
+
+
+
+//---------EXERCISE 10---------//
+
+const localLangConfig = null
+const LANG = localLangConfig || 'en';
+
+console.log('Language setting:', LANG);
+
+
+const userSavedTheme = null; 
+const USER_THEME = userSavedTheme || 'light';
+
+console.log('User theme setting:', USER_THEME);
+
+
+
+//---------EXERCISE 11---------//
+
+const adventurer = {
+    name: 'Alice',
+  };
+  
+  let cat = adventurer.cat?.name;
+  
+  console.log(cat);
